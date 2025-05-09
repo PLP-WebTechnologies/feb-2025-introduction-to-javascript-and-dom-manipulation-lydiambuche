@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript DOM Manipulation</title>
+  <style>
+     /* Style for the dynamic text element */
+    #dynamicText {
+      color: blue;
+      font-size: 20px;
+    }
+    /* Style for the newly added element */
+    #newElement {
+      margin-top: 10px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+     <!-- Heading whose text and style will change dynamically -->
+ 
+     <h2 id="dynamicText">Hello, this is original text!</h2>
+     
+     <!-- Button to trigger text and style change -->
+ <button onclick="changeText()">Change Text & Style</button>
+
+ <!-- Button to add or remove a new element in the DOM -->
+  <button onclick="toggleElement()">Add/Remove Element</button>
+
+ <!-- Container where the new element will be added or removed -->
+  <div id="container"></div>
+
+  <!-- External JavaScript file: contains the functions changeText() and toggleElement() -->
+  <script src="script.js"></script>
+
+</body>
+</html>
